@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webpage</title>
+    <!-- to include css -->
+    <link rel="stylesheet" href="a.css" />
+
+    <!-- to include external js -->
+    <script src="a.js"></script>
+  </head>
+  <body>
+    <!-- heading tag h1 to h6 -->
+    <h1>heading</h1>
+    <h3>hello there</h3>
+
+    <h6>hello</h6>
+    <h1>LIST</h1>
+    <ul type="circle" id="apps">
+      <li>unordered list</li>
+      <li>unordered list</li>
+      <li>unordered list</li>
+    </ul>
+    <ol type="A">
+      <li>ordered list</li>
+      <li>ordered list</li>
+      <li>ordered list</li>
+      <li>ordered list</li>
+    </ol>
+    <!-- table -->
+    <h1>table</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>roll</th>
+          <th>addr</th>
+          <th>religion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>aashik</td>
+          <td>1</td>
+          <td>raghu</td>
+          <td>hindu</td>
+        </tr>
+        <tr>
+          <td>a</td>
+          <td>1</td>
+          <td>raghunathpur</td>
+          <td>hindu</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>PARAGRAPH</h1>
+    <marquee behavior="alternate" bgcolor="yellow">marquee text</marquee>
+    <marquee behavior="alternate" bgcolor="orange"
+      ><p>for paragaraph</p></marquee
+    >
+    <!-- inline CSS -->
+    <p style="color: aqua; background-color: brown">
+      for new paragaraph Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit. Aliquid ipsa laudantium alias assumenda repudiandae minima iure
+      accusantium maxime excepturi, odio cum cumque harum doloremque numquam
+      iusto! <strong>for strong message</strong> Laboriosam
+      <em>for emphasis</em> quibusdam incidunt a nesciunt, voluptates nostrum
+      suscipit ducimus dolores quia. Sint, <br />magnam quam.
+    </p>
+    <h1>ANCHOR AND IMAGE</h1>
+    <a href="https://facebook.com" target="_blank">direct to facebook</a><br />
+    <a href="https://google.com" target="_blank">direct to google</a><br />
+    <a href="/apple.html" target="_blank">to go to apple</a><br />
+    <img
+      src="4727457.jpg"
+      alt=" not found"
+      width="600"
+      height="400"
+      style="vertical-align: middle; margin: 0px 50px"
+    />
+    <h1>Forms</h1
+  <form action="backend.php" >
+    <div id="form11">
+       <label for="name">NAME:</label>
+       <input type="text" name="myname" id="name" />
+      <br />
+      <label for="id">id:</label>
+      <input type="text" name="myID" id="id" />
+      <br />
+      <div>time: <input type="time" name="mytime" id="time" /></div>
+      <br />
+      <div>
+        EMail: <input type="email" name="mymail" placeholder="search" />
+      </div>
+      <br />
+
+      <div>
+        male <input type="radio" name="mygender" /> female
+        <input type="radio" name="mygender" />
+      </div>
+      <br />
+      <div>
+        about yourself:<textarea name="mytext" cols="30" rows="10"></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="fruit">FRUITS::</label>
+        <select name="fruit" id="fruit">
+          <option value="apple">apple</option>
+          <option value="mango">mango</option>
+          <option value="orange" selected>orange</option>
+        </select>
+      </div>
+      <br />
+      <div><input type="submit" value="SUBMIT now" /></div>
+    </div> 
+  </form>
+    <button class="btn" onclick="disp()">
+       SHOW/HIDE
+    </button>
+    <!-- . is for class and # is for id -->
+    <script>
+    let main=document.getElementById('apps')
+    console.log(main);
+    let query=document.querySelectorAll('#apps>li');
+    console.log(query);
+    let form=document.getElementById('form11');
+    console.log(form);
+    let btn=document.getElementsByClassName('btn');
+    console.log(btn);
+    function disp(){
+      if(form.style.display!='none'){
+      form.style.display='none';
+     }
+    else{
+      form.style.display='grid';
+    }}
+    </script>
+  </body>
+</html>

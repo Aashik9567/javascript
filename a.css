@@ -1,0 +1,75 @@
+html{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+p{
+    color: #4848ff;
+    background-color: rgb(170, 182, 178);
+    font-family:Impact, Haettenschweiler;
+    font-size: 20px;
+    line-height: 2em;
+    font-style: italic;
+    border: 2px dotted pink;
+    text-align: center;
+    width: 50%;
+}
+h1{
+    text-align: center;
+    color:rebeccapurple;
+}
+
+body{
+  
+    background: radial-gradient(circle, rgba(63,168,251,1) 1%, rgba(244,82,115,1),rgb(216, 161, 94) 98%);
+    }
+form{
+    text-align: center;
+} 
+h1,table{
+    background-color: rgb(250, 186, 252);
+    color: rgb(1, 101, 67);
+    font-size: 25px;
+    width: 67%;
+    margin: 20px;
+    padding: 10px;
+    border: 3px dotted rgb(7, 32, 191);
+    border-radius: 10px;
+} 
+table thead th,table tbody td{
+    margin: 8px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: underline;
+    border: 3px solid rgb(0, 217, 255);
+    border-radius: 10px;
+} 
+a{
+    border: 3px solid rgb(0, 217, 255);
+    display: flex;
+    border-radius: 10px;
+    margin: 8px;
+    padding: 8px;
+}    
+   
+.btn{
+    border: 2px solid rgb(110, 169, 105);
+    background: rgb(122,210,247);
+    background: linear-gradient(90deg, rgba(122,210,247,1) 44%, rgba(21,106,187,1) 78%);
+}
+#form11{
+    border: 2px solid rgb(110, 169, 105);
+    background: rgb(122,210,247);
+    background: linear-gradient(90deg, rgba(122,210,247,1) 44%, rgba(21,106,187,1) 78%);
+    border-radius: 10px;
+    margin: 8px;
+    padding: 8px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+   
+/* *{
+    background-color: aqua;
+    text-align: center;
+} */

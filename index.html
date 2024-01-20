@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .menubar ul {
+        list-style: none;
+        display: inline-flex;
+        color: rgb(194, 180, 180);
+      }
+      img {
+        height: 80px;
+        border-radius: 50%;
+        background-color: aliceblue;
+        margin: 11px 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="menubar">
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/008/550/314/small/headphone-device-electronic-icon-3d-illustration-png.png"
+          alt=""
+        />
+        <div>
+          <ul>
+            <li class="active">
+              <a href="#">Home<i class="fa-solid fa-house"></i></a>
+            </li>
+            <li>
+              <a href="#">About us<i class="fa-solid fa-address-card"></i></a>
+              <div class="submenu">
+                <ul>
+                  <li><a href="#">teams</a></li>
+                  <li><a href="#">staff</a></li>
+                  <li><a href="#">location</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Services<i class="fa-solid fa-user"></i></a>
+              <div class="submenu">
+                <ul>
+                  <li><a href="#">earphone repair</a></li>
+                  <li><a href="#">speaker repair</a></li>
+                  <li class="hoverme">
+                    <a href="#"
+                      >tv repair<i class="fa-solid fa-angle-right"></i
+                    ></a>
+                    <div class="submenu2">
+                      <ul>
+                        <li><a href="#">crt</a></li>
+                        <li><a href="#">desktop</a></li>
+                        <li><a href="#">led</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Contacts<i class="fa-solid fa-phone"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="signin">
+        <div class="form">
+          <h1>LOGIN</h1>
+          <label for="un">Username</label>
+          <div class="user">
+            <input type="text" id="un" placeholder="Username" />
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <label for="pw">Password</label>
+          <div class="pass">
+            <input type="text" id="pw" placeholder="password" />
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <p>don't have any account?<a href="#"> register</a></p>
+        </div>
+      </div>
+      <div class="cont">
+        <h3>ENTER THE FOLLOWING DETAILs:</h3>
+        <form action="a.php">
+          <div class="formgrp">
+            <div><label for="name">Name:</label></div>
+            <input type="text" placeholder="enter your name" id="name" />
+          </div>
+          <div class="formgrp">
+            <div><label for="name">Address:</label></div>
+            <input type="text" placeholder="enter your Address" id="name" />
+          </div>
+          <div class="formgrp">
+            <div><label for="type">Device type:</label></div>
+            <input type="text" placeholder="enter your device type" id="type" />
+          </div>
+          <div class="formgrp">
+            <div><label for="device to repair">Device name:</label></div>
+            <input
+              type="text"
+              placeholder="enter your device name"
+              id="device to repair"
+            />
+          </div>
+          <div class="formgrp">
+            <div>
+              <label for="date"
+                ><abbr title="date of purchase">Date OP:</abbr>
+              </label>
+            </div>
+            <input type="date" id="date" />
+          </div>
+          <div class="formgrp">
+            <div><label for="contact">contact:</label></div>
+            <input type="text" placeholder="enter your contact" id="contact" />
+          </div>
+
+          <button class="btn">submit</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto:ital,wght@1,900&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <title>box and text shadow</title>
+    <!-- internal CSS -->
+    <style>
+      :root {
+        --font-col: aliceblue;
+      }
+      * {
+        margin: 0;
+      }
+      header::before {
+        content: "";
+        background: url("https://images.unsplash.com/photo-1519068737630-e5db30e12e42?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+          no-repeat;
+        background-size: cover;
+        color: var(--font-col);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.95;
+      }
+      body {
+        font-family: "Merriweather", serif;
+        font-size: 1rem;
+        color: var(--font-col);
+      }
+      .container {
+        background-color: rgb(103, 103, 76);
+        display: flex;
+        border: 2px solid yellow;
+       
+      }
+      .box {
+        margin: 10px;
+        padding: 24px 12px;
+        border: 2px solid red;
+        border-radius: 3px;
+        background-color: rgb(101, 210, 147);
+        /* for below shadow */
+        /* box-shadow: offset-x offset-y blurrradius spread-radius color; */
+        box-shadow: 10px 10px yellow;
+        /* for above shadow and 10px is blurr radius */
+        box-shadow: -5px -5px 10px 6px rgb(156, 207, 54, 0.7);
+        /* inset for inside shadow */
+        box-shadow: inset -5px 10px 6px rgb(156, 207, 54, 0.7);
+        box-shadow: 4px 4px orange, 5px 5px yellow; /*for double or triple color shadow*/
+      }
+      .box h2 {
+        text-shadow: 4px 4px 2px black;
+      }
+      #box-1 {
+         /* animation: aashiq 10s; 
+         animation-iteration-count: 6;
+         animation: aashiq1 2s; 
+        animation-delay: 1s;          
+        animation-timing-function: ease-in-out;
+        transition-property: background-color; 
+        */
+        transition: all 4s ease-in .4s; 
+      }
+   
+    
+      /* @keyframes aashiq1 {
+        0% {
+          background-color: blueviolet;
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+          background-color: bisque;
+          top: 500px;
+          left: 0px;
+        }
+        75% {
+          background-color: palevioletred;
+          top: 500px;
+          left: 500px;
+        }
+        100% {
+          background-color: rgb(128, 240, 188);
+          top: 0px;
+          left: 500px;
+        }
+      } */
+      @keyframes aashiq{
+              from{
+                height: 100px;
+              }
+              to{
+              height:500px
+              } }
+      #box-1:hover{
+        /* transform: rotate(360deg); */
+        transform: translate(100px,100px);
+
+      }        
+    </style>
+
+    <!-- to link external css 
+        <link rel="stylesheet" href="a.css"> -->
+  </head>
+  <body>
+    <header>
+      <h1>welcome</h1>
+      <p>welcome to the website</p>
+    </header>
+    <hr />
+    <div class="container">
+      <div class="box" id="box-1">
+        <h2>Box no 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+          aspernatur minus beatae libero doloribus placeat repellendus laborum
+          ratione, possimus officiis molestias eveniet vel iste?
+        </p>
+      </div>
+      <div class="box" id="box-2">
+        <h2>Box no 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+          aspernatur minus beatae libero doloribus placeat repellendus laborum
+          ratione, possimus officiis molestias eveniet vel iste?
+        </p>
+      </div>
+      <div class="box" id="box-3">
+        <h2>Box no 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+          aspernatur minus beatae libero doloribus placeat repellendus laborum
+          ratione, possimus officiis molestias eveniet vel iste?
+        </p>
+      </div>
+      <div class="box" id="box-4">
+        <h2>Box no 4</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+          aspernatur minus beatae libero doloribus placeat repellendus laborum
+          ratione, possimus officiis molestias eveniet vel iste?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

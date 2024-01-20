@@ -1,0 +1,196 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header::before{
+  background-image: url("https://images.unsplash.com/photo-1603847734787-9e8a3f3e9d60?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  opacity: 68%;
+}
+body {
+  
+  font-family: klavika;
+  font-weight: bold;
+  font-size: 20px;
+}
+.menubar {
+  display: flex;
+  position: sticky;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  /* background-color: rgb(237, 91, 237); */
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  z-index: 6;
+}
+.menubar ul li {
+  width: 120px;
+  margin: 8px;
+  padding: 8px;
+}
+.menubar ul li a {
+  text-decoration: none;
+  color: rgb(1, 84, 228);
+}
+.menubar ul li a:hover {
+  color: aquamarine;
+}
+
+.active,
+.menubar ul li:hover {
+  border-radius: 4px;
+  background-color: rgb(215, 28, 215);
+}
+.submenu {
+  display: none;
+}
+.menubar ul li:hover .submenu {
+  display: block;
+  position: absolute;
+  background-color: rgb(248, 217, 217);
+  margin-top: 15px;
+  margin-right: 15px;
+}
+.menubar ul li:hover .submenu ul {
+  display: block;
+  margin: 10px;
+}
+.menubar ul li:hover .submenu ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 2px dotted rgb(213, 166, 166);
+  background: transparent;
+  text-align: left;
+}
+.menubar ul li:hover .submenu ul li:last-child {
+  border-bottom: none;
+}
+.menubar ul li:hover .submenu ul li a:hover {
+  color: rgb(150, 162, 66);
+}
+.fa-angle-right {
+  float: right;
+}
+.submenu2 {
+  display: none;
+}
+.hoverme:hover .submenu2 {
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background-color: rgb(203 124 21 / 70%);
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.cont {
+  font-family:klavika;
+  margin: 32px 24px;
+  border: 1px solid rgb(120, 117, 117,.4);
+  border-radius: 8px;
+  padding: 20px 40px;
+  width: 460px;
+ color: rgb(26, 211, 143);
+ background: transparent;
+ backdrop-filter: blur(20px);
+ box-shadow: 0 0 10px rgba(255,255,255,.4);
+}
+.btn {
+  margin: 14px auto;
+  padding: 7px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+.formgrp input {
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 5px;
+  width: 250px;
+  height: 26px;
+  font-size: 17px;
+}
+.formgrp input,
+label {
+  margin: 5px auto;
+}
+.cont button {
+  display: block;
+  margin: 10px auto;
+  width: 30%;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(72, 171, 39);
+}
+.cont button:hover {
+  background-color: plum;
+}
+.signin{
+  padding: 88px;
+  font-size: 15px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: repeat(7,33px);
+
+}
+.signin input{
+  width: 210px;
+  border-radius: 10px;
+  border: 1px solid black;
+  height: 30px;
+  
+}
+button{
+  width: 90px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(250, 143, 19, 0.989);
+  background-color: rgb(255, 255, 255);
+}
+.signin>h1{
+  margin: 72px;
+  width: 42%;
+  align-items: center;
+}
+.signin .form{
+  font-size: 20px;
+  align-items: center;
+  margin-top: auto;
+  border: 1px solid rgba(172, 151, 151, .7); 
+  padding: 51px;
+  border-radius: 10px;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(255,255,255,.4);
+  color: rgba(49, 209, 155, 0.802);
+
+}
+p>a{
+  text-decoration: none;
+  color: rgba(18, 125, 219, 0.758);
+}
+p>a:hover{
+  color: rgb(173, 22, 178);
+}
+.btn:hover{
+  color: rgb(9, 148, 240);
+  background-color: yellow;
+}
